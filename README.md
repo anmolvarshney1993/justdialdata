@@ -1,8 +1,11 @@
 # All you need to do is copy the below code and save it as a .py file.
 # Run- python yourfilename.py (and see the magic)
 import requests
+
 from bs4 import BeautifulSoup
+
 import json
+
 import csv
 
 jd_url = "http://www.justdial.com/Bangalore/Car-Hire-%3Cnear%3E-Shanthinagar"
