@@ -1,4 +1,5 @@
-# PIP requirements: requests, beautifulsoup4
+# All you need to do is copy the below code and save it as a .py file.
+# Run- python yourfilename.py (and see the magic)
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -6,8 +7,6 @@ import csv
 
 jd_url = "http://www.justdial.com/Bangalore/Car-Hire-%3Cnear%3E-Shanthinagar"
 
-# Split http/https prefix if any
-# TODO: work on URLs which dont' have the CT part in URL
 jd_url = jd_url.split('http://www.justdial.com/')[-1].split('https://www.justdial.com/')[-1]
 city, search, cat_id = '', '', ''
 split_vals = jd_url.split('/')
